@@ -1,0 +1,82 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+     background-color: #0D0628;
+     color: #9A348E;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+#container {
+     padding-top: 25vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+#results-div {
+     width: 100%;
+     margin: 20px auto;
+     text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1 {
+     margin: 5vh auto;
+     text-align: center;
+}
+
+button {
+     background-color: #9A348E;
+     outline: none;
+     color: #0D0628;
+     border: none;
+     padding: 10px 10px; 
+     cursor: pointer;
+     transition: all ease-in .5s;
+}
+
+button:hover {
+     background-color: #a2649b;
+}
+
+#check-btn {
+     margin-left: 6px; 
+}
+
+input[type="text"] {
+     height: 38px;
+}
+
+input[type="text"]:focus {
+     outline: none;
+}
+
